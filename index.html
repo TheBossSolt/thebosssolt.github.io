@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Chen | Portfolio</title>
-    <!-- CSS file (only ONE, not two) -->
+    <title>Alex Chen | AI Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome 6 (working CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- AI Animated Background -->
+    <div class="ai-bg">
+        <div class="grid-overlay"></div>
+        <div class="scan-line"></div>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="#">AC</a>
+                <a href="#"><span class="ai-bracket">[</span>AC<span class="ai-bracket">]</span></a>
+                <span class="ai-badge">AI_MODEL</span>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">// HOME</a></li>
+                <li><a href="#about">// ABOUT</a></li>
+                <li><a href="#achievements">// ACHIEVEMENTS</a></li>
+                <li><a href="#projects">// PROJECTS</a></li>
+                <li><a href="#contact">// CONTACT</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -34,11 +39,20 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glow-text">Alex Chen</h1>
-            <p class="typed-text" id="typedText"></p>
+            <div class="ai-status">
+                <span class="status-led"></span>
+                <span>AI SYSTEM ONLINE</span>
+                <span class="status-led"></span>
+            </div>
+            <h1 class="glitch-text" data-text="Alex Chen">Alex Chen</h1>
+            <div class="terminal">
+                <span class="terminal-prompt">$</span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor">_</span>
+            </div>
             <div class="hero-buttons">
-                <a href="#achievements" class="btn btn-primary">View Achievements</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#achievements" class="btn btn-primary">⌘ VIEW ACHIEVEMENTS</a>
+                <a href="#contact" class="btn btn-secondary">⟳ CONTACT ME</a>
             </div>
         </div>
     </section>
@@ -46,17 +60,21 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">System Analysis</h2>
+                <span class="section-tag">&lt;/about&gt;</span>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate developer and researcher focused on building impactful solutions. Over the past 4 years, I've contributed to open-source projects, led hackathon teams, and published research in AI ethics.</p>
+                    <p class="ai-response">>_ I'm a passionate developer and researcher focused on building impactful solutions. Over the past 4 years, I've contributed to open-source projects, led hackathon teams, and published research in AI ethics.</p>
                     <div class="skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">#Python</span>
+                        <span class="skill-tag">#JavaScript</span>
+                        <span class="skill-tag">#React</span>
+                        <span class="skill-tag">#Node.js</span>
+                        <span class="skill-tag">#TensorFlow</span>
+                        <span class="skill-tag">#Figma</span>
                     </div>
                 </div>
             </div>
@@ -66,31 +84,39 @@
     <!-- Achievements Section -->
     <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title">Key Achievements</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;achievements&gt;</span>
+                <h2 class="section-title">Mission Logs</h2>
+                <span class="section-tag">&lt;/achievements&gt;</span>
+            </div>
             <div class="achievements-grid">
                 <div class="achievement-card">
+                    <div class="card-glow"></div>
                     <i class="fas fa-trophy"></i>
                     <h3>1st Place - Global Hackathon 2025</h3>
                     <p>Led a team of 4 to build an AI-powered accessibility tool, winning among 500+ participants worldwide.</p>
-                    <span class="achievement-date">March 2025</span>
+                    <span class="achievement-date">[COMPLETED: 03.2025]</span>
                 </div>
                 <div class="achievement-card">
+                    <div class="card-glow"></div>
                     <i class="fas fa-file-alt"></i>
                     <h3>Published Research Paper</h3>
                     <p>"Ethical Considerations in LLM Deployment" - Presented at IEEE AI Ethics Conference 2024.</p>
-                    <span class="achievement-date">December 2024</span>
+                    <span class="achievement-date">[COMPLETED: 12.2024]</span>
                 </div>
                 <div class="achievement-card">
+                    <div class="card-glow"></div>
                     <i class="fas fa-code-branch"></i>
                     <h3>500+ GitHub Stars</h3>
                     <p>Created and maintained an open-source library for data visualization, used by 50+ companies.</p>
-                    <span class="achievement-date">Current</span>
+                    <span class="achievement-date">[STATUS: ACTIVE]</span>
                 </div>
                 <div class="achievement-card">
+                    <div class="card-glow"></div>
                     <i class="fas fa-chalkboard-user"></i>
                     <h3>Guest Lecturer</h3>
                     <p>Invited to speak at Stanford University about modern web development practices.</p>
-                    <span class="achievement-date">September 2024</span>
+                    <span class="achievement-date">[COMPLETED: 09.2024]</span>
                 </div>
             </div>
         </div>
@@ -99,9 +125,13 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Active Repositories</h2>
+                <span class="section-tag">&lt;/projects&gt;</span>
+            </div>
             <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be loaded dynamically via JS -->
+                <!-- Projects loaded via JS -->
             </div>
         </div>
     </section>
@@ -109,39 +139,51 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Establish Connection</h2>
+                <span class="section-tag">&lt;/contact&gt;</span>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>alex.chen@example.com</p>
+                        <div>
+                            <p class="contact-label">EMAIL</p>
+                            <p>alex.chen@example.com</p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
-                        <p>github.com/alexchen</p>
+                        <div>
+                            <p class="contact-label">GITHUB</p>
+                            <p>github.com/alexchen</p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <p>linkedin.com/in/alexchen</p>
+                        <div>
+                            <p class="contact-label">LINKEDIN</p>
+                            <p>linkedin.com/in/alexchen</p>
+                        </div>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
-                    <input type="text" id="contactName" placeholder="Your Name" required>
-                    <input type="email" id="contactEmail" placeholder="Your Email" required>
-                    <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <input type="text" id="contactName" placeholder="[ENTER_NAME]" required>
+                    <input type="email" id="contactEmail" placeholder="[ENTER_EMAIL]" required>
+                    <textarea id="contactMessage" rows="4" placeholder="[ENTER_MESSAGE]" required></textarea>
+                    <button type="submit" class="btn btn-primary">⟳ SEND TRANSMISSION</button>
                     <p class="form-status" id="formStatus"></p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Alex Chen. Built from scratch with HTML, CSS, and JS.</p>
+        <p>&lt;Alex Chen /&gt; — AI Portfolio v2.0 — <span id="year"></span></p>
     </footer>
 
-    <!-- JavaScript - NOW using the correct filename "function.js" -->
     <script src="function.js"></script>
+    <script>document.getElementById('year').innerHTML = new Date().getFullYear();</script>
 </body>
 </html>
