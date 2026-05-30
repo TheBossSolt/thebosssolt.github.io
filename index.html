@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Chen | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons (free CDN) -->
+    <!-- CSS file (only ONE, not two) -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 (working CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -125,9 +126,9 @@
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea rows="4" placeholder="Your Message" required></textarea>
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                     <p class="form-status" id="formStatus"></p>
                 </form>
@@ -140,6 +141,7 @@
         <p>&copy; 2026 Alex Chen. Built from scratch with HTML, CSS, and JS.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript - NOW using the correct filename "function.js" -->
+    <script src="function.js"></script>
 </body>
 </html>
